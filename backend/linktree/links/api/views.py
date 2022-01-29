@@ -30,7 +30,7 @@ def link_detail_api_view(request, pk):
         return Response({
             'errors': {
                 'code': 404,
-                'message': 'There is no link with ({pk}) in link tree.'
+                'message': f'There is no link with id ({pk}) in link tree.'
             }
         },
             status=status.HTTP_404_NOT_FOUND)
