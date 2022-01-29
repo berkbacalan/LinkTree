@@ -1,5 +1,3 @@
-from turtle import st
-from urllib import response
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
@@ -53,6 +51,6 @@ def link_detail_api_view(request, pk):
         return Response({
             'Action': {
                 'code': 204,
-                'message': 'Link has deleted with id ({pk}) from link tree.'
+                'message': 'Link has deleted from link tree.'
             }
         }, status=status.HTTP_204_NO_CONTENT)
